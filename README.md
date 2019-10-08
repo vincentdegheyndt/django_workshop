@@ -16,7 +16,9 @@
 
 https://openclassrooms.com/fr/courses/4425076-decouvrez-le-framework-django/4631014-decouvrez-larchitecture-mvt
 
-
+M = M
+V = T
+C = V
 
 # Installation
 ## Python
@@ -65,15 +67,26 @@ Il est de bonne pratique de ne pas installer Django directement sur sa machine m
 
 
 Pour aller plus loin : https://realpython.com/python-virtual-environments-a-primer/
+
+![Virtual blague](assets/help.png)
 ## Django
 
 pip install django
 
-## database postgresql
-![Logo de postgresql](assets/postgresql.png)
+Et maintenant, terminons cette longue phase d'installation avec la databse.
 
+## Database en postgreSQL
+![Logo de postgresql](assets/post2.webp)
+
+Qui est ce bel éléphant qui pose son regard serein sur Django, me direz-vous ?
+
+Ce bel éléphant, c'est postgreSQL
 
 ## Lancer ton serveur
+
+
+
+![Le python te félicite](assets/meme.jpg)
 
 # Votre premier projet (Instagram)
 
