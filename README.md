@@ -34,7 +34,7 @@ Un template est un fichier HTML qui peut recevoir des objets Python et qui est l
 
 Le template se concentre essentiellement sur l'affichage. il ne fait presque aucun calcul et se contente de récupérer des variables pour savoir ce qu'il doit afficher. 
 
-Par exemple, nous pouvons "donner" la variable tom="Tom" au template index.html et ce dernier l'affichera à la place du prénom.
+Par exemple, nous pouvons "donner" la variable `tom="Tom"` au template `index.html` et ce dernier l'affichera à la place du prénom.
 
 ### 3. Vue
 
@@ -101,7 +101,7 @@ C'est l'équivalent du npm de javascript.
 
 Nous utiliserons donc pip pour installer le package Django.
 
-Depuis python 3.4, pip est inclus pard éfaut dans l'installateur python.
+Depuis python 3.4, pip est inclus par défaut dans l'installateur python.
 
 Une petite vérification ne faisant jamais de mal, tape ceçi dans ton invite de commande :
 
@@ -140,17 +140,17 @@ Fondamentalement, un environnement virtuel n'est qu'un dossier avec quelques scr
 
     python3 -m venv nomdetonenvironnement
 
-La commande "-m" signifie que tu veux télécharger le module "venv" ; c'est-à-dire le module "virtual environment".
+La commande `"-m"` signifie que tu veux télécharger le module `"venv"` ; c'est-à-dire le module "virtual environment".
 
-Dans mon cas, j'ai appelé mon environnement "workshop" mais tu es libre de l'appeller comme tu veux.
+Dans mon cas, j'ai appelé mon environnement `"workshop"` mais tu es libre de l'appeller comme tu veux.
 
 Ce qui donne chez moi : 
 
     python3 -m venv workshop
 
-Le module venv est inclus à partir de python 3.4. 
+Le module `venv` est inclus à partir de python 3.4. 
 
-Si tu es sur une version antérieure, tu devras l'installer via pip.
+Si tu es sur une version antérieure, tu devras l'installer via `pip`.
 
         pip install virtualenv
 
