@@ -240,6 +240,8 @@ Quitte le shell python et crée le projet instaclone via cette ligne de commande
 
 >Note : si tu n'es pas dans ton environnement virtuel, cette commande ne fonctionnera pas. Pourquoi ? Parce que tu as installé Django au sein de cet environnement uniquement. Il n'est donc pas accessible de l'extérieur. C'est tout l'intérêt de l'environnement virtuel.
 
+Django-admin est l’utilitaire en ligne de commande de Django pour les tâches administratives. tu ne t'en serviras qu'à la crétion du projet.
+
 Tu peux ensuite taper :
 
     ls
@@ -260,11 +262,22 @@ Tu devrais normalement avoir lancé Vs code et ouvert ton projet.
 Si tu utilises un autre éditeur de code, le raccourci sera évidemment différent. 
 Je te te laisse te renseigner ^^
 
-![server](assets/server.png)
+Dans vs code, tu devrais voir un fichier `manage.py`. C'est via ce fichier que tu vas gérer ton projet dans l'invit de commande désormais.
 
-![worked](assets/worked.png)
 
 ## Lance ton serveur
+
+Pour lancer ton serveur, tape : 
+
+    ./manage.py runserver
+
+Ce qui donne ceçi :
+
+![server](assets/server.png)
+
+Rends-toi sur ton localhost (8000 dans cet exemple) et tu devrais avoir ta première page en python !
+
+![worked](assets/worked.png)
 
 
 ![Le python te félicite](assets/meme.jpg)
