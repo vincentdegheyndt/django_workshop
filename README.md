@@ -136,7 +136,7 @@ Tu peux même utiliser des versions différentes de python pour chaque projet si
 
 Fondamentalement, un environnement virtuel n'est qu'un dossier avec quelques scripts. Tu peux donc en créer autant que tu tu veux avec quelques lignes de commande.
 
-> Attention, c'est ici que des différences apparaissent entre python 2 et 3 au niveau des lignes de commandes. je te mets quand même les lignes de commande en python 2 au cas où.
+> Attention, c'est ici que des différences apparaissent entre python 2 et 3 au niveau des lignes de commandes. Donc si tu n'es pas en python 3, update ta version.
 
     python3 -m venv nomdetonenvironnement
 
@@ -176,10 +176,10 @@ Si tu est sous windows, tapes ceçi :
 
     nomdetonenvrionnement\Scripts\activate.bat
 
-Tu remarqueras le nom de ton environnement apparait désormais devant ton user. Toutes tes futures lignes de commandes prennent donc uniquement cours dans ce dossier.
+Tu remarqueras que le nom de ton environnement apparait désormais devant ton user. Toutes tes futures lignes de commandes prennent donc uniquement cours dans ce dossier.
 
-A noter que dans mon exemple, le mot "workshop" apparait 2 fois. C'est uniquement parce que le dossier de mon projet porte le même nom que mon environnement.
-Sorry pour la confusion.
+>A noter que dans mon exemple, le mot "workshop" apparait 2 fois. C'est uniquement parce que le dossier de mon projet porte le même nom que mon environnement.
+>Sorry pour la confusion.
 
 Pour le désactiver, tape simplement :
     
@@ -198,9 +198,49 @@ Pour aller plus loin : https://realpython.com/python-virtual-environments-a-prim
 ![Virtual blague](assets/help.png)
 ## Django
 
+Tape ceçi pour installer la dernière version en date de Django: 
+
     pip install django
 
-Et maintenant, terminons cette longue phase d'installation avec la database.
+
+Lorsque tu installe python, tu installes également l'invit de commande (le shell) de python.
+
+Retourne dans ton environnement virtuel et accède au shell python en tapant tout simplement :
+    
+    python
+
+Ce nouveau shell te servira à créer tes projets. 
+
+tape :
+    
+    import django
+
+Si tu n'as pas de message d'erreyr, c'est que tout s'est correctement installé. Bravo !
+
+tape encore :
+
+    django.get_version()
+
+Et tu connaitras ta version de Django
+
+Chez moi, ça donne ça :
+
+![shell python](assets/shell.png)
+
+Pour quitter ce shell, tape :
+
+    quit() ou exit() ou encore ctrl d
+
+
+## Création du projet instaclone
+
+Quitte le shell python et crée le projet instaclone via cette ligne de commande :
+
+    django-admin startproject instaclone
+
+>Note : si tu n'es pas dans ton environnement virtuel, cette commande ne fonctionnera pas. Pourquoi ? Parce que tu as installé Django au sein de cet environnement uniquement. Il n'est donc pas accessible de l'extérieur. C'est tout l'intérêt de l'environnement virtuel.
+
+
 
 ## Database en postgreSQL
 ![Logo de postgresql](assets/post2.webp)
@@ -216,9 +256,6 @@ Ce bel éléphant, c'est postgreSQL
 ![Le python te félicite](assets/meme.jpg)
 
 # Votre premier projet (Instagram)
-
-
-
 
 
 # Pour Aller plus loin
