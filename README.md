@@ -5,84 +5,211 @@
 ## Qu'est-ce que Django ?
 * Il s'agit du framework web Python le plus populaire. Il est notamment utilisé par Pinterest, Instagram, Eventbrite et mozilla.
   
-* Il respecte l'architecture MVT (inspirée du MVC)
+* Django est basé sur une architecture MVT, elle-même dérivée de l'architecture MVC. 
 * Une administration ultra flexible
 * https://realpython.com/manage-users-in-django-admin/
 
 
-## Qu'est-ce que l'architecture MVC ?
 
-## Et le MVT dans tout ça ?
+## Qu'est-ce que l'architecture MVT ?
+Le MVT est un design pattern qui signifie Modèle - Vue - Template.
 
+Le but d'un design pattern est d'organiser son code source en fonction d'une logique bien précise.
+
+En l'occurence, le but du MVT est de séparer la logique du code en trois parties que l'on retrouve dans des fichiers distincts.
+
+### 1. Modèle
+
+    Le modèle interagit avec la base de données. Sa mission est de chercher dans une base de donnée les items correspondant à une requête et de renvoyer une réponse facilement exploitable par le programme.
+
+    La consultation d'une base de données relationnelle se réalise par un langage appelé SQL (Structured Query Language). Sa syntaxe est très différente de Python ! 
+
+    Un ORM (Object Relational Mapping, ou Mapping objet-relationnel en français) est donc inclus dans le modèle pour traduire les résultats d'une requête SQL en objets Python avec lesquels il peut interagir. De même, il permet d'écrire une requête SQL directement en Python. Un peu comme un traducteur automatique !
+
+    Dans un projet Django, chaque application contient un document models.py qui réunit les différents modèles utilisés.
+
+### 2. Template
+
+    Un template est un fichier HTML qui peut recevoir des objets Python et qui est lié à une vue (nous y reviendrons). Il est placé dans le dossier templates.
+
+    Le template se concentre essentiellement sur l'affichage. il ne fait presque aucun calcul et se contente de récupérer des variables pour savoir ce qu'il doit afficher. 
+
+    Par exemple, nous pouvons "donner" la variable tom="Tom" au template index.html et ce dernier l'affichera à la place du prénom.
+
+### 3. Vue
+
+    La vue joue un rôle central dans un projet structuré en MVT : sa responsabilité est de recevoir une requête HTTP et d'y répondre de manière intelligible par le navigateur.
+
+    La vue réalise également toutes les actions nécessaires pour répondre à la requête :
+
+    Si une interaction avec la base de données est requise, la vue appelle un modèle et récupère les objets renvoyés par ce dernier.
+
+    Si un gabarit est nécessaire, la vue l'appelle.
+
+    Dans un projet Django, les vues de chaque application sont regroupées dans le document views.py.
+
+    Chaque vue est associée à une url. Les urls d'un projet sont regroupées dans le fichier urls.py.
+
+
+
+Pour aller plus loin, 
 https://openclassrooms.com/fr/courses/4425076-decouvrez-le-framework-django/4631014-decouvrez-larchitecture-mvt
 
-M = M
-V = T
-C = V
+### Comparaison avec le MVC
+
+Comme mentionné plus haut, le pattern MVT s'inspire du pattern MVC.
+
+Si tu as déjà des notions en MVC, fais bien attention à ne pas confondre ces deux modèles. En effet une vue en MVT n'est pas du tout la même chose qu'une vue en MVC.
+
+Si cette affirmation t'a fait bugger, remonte la page et relis la description du MVT^^
+
 
 # Installation
 ## Python
-Télécharge et installe Python.
+Si tu es sur pc ou Mac,télécharge et installe Python : 
 https://www.python.org/
 
 Pour les adeptes d'Ubuntu,
 
-> sudo apt-get install python3.X
+    sudo apt-get update
 
-en cas de problème avec Ubuntu : http://ubuntuhandbook.org/index.php/2017/07/install-python-3-6-1-in-ubuntu-16-04-lts/
+    sudo apt-get install python3.x
 
-Fais bien attention d'installer une version de python 3 au minimum sans quoi certaines choses seront différentes. De plus, la doc officielle recommande de n'utiliser que python 3 à partir de janvier 2020.
 
-Si tu as des doutes sur ta version, va dans invite de commande et tape : 
+Fais bien attention d'installer python 3 et non pas python 2 sans quoi certaines choses seront différentes. La doc officielle recommande d'ailleurs de n'utiliser que python 3 à partir de janvier 2020.
 
-> python3 -v 
-> 
- ou
->  
-> python3 --version
+Pour vérifier ta version, va dans invite de commande et tape : 
 
+    python3 --version
+
+ ou alors
+
+    python3 -v 
+
+Ce qui te donnera quelque chose dans ce genre là :
 
 ![Ma version de Python](/assets/version2.png)
+
 
 ## Ceci n'est pas une pip
 
 ![Logo de pip](assets/pip.jpg)
 
-Pip est un gestionnaire de paquets utilisé pour installer et gérer des paquets écrits en Python. À partir des versions 2.7.9 (pour Python) et 3.4(pour pip), pip est inclus par défaut dans la distribution officielle de Python.
+Pip est un gestionnaire de package utilisé pour installer et gérer des packages et librairies écrits en langage Python.
 
-Merci Wikipédia pour ces précisions.
+C'est l'équivalent du npm de javascript.
 
-En gros, pip te permet d'installer tous les packages et libraires  dont tu auras besoin en Python. C'est l'équivalent du npm de javascript.
+Nous utiliserons donc pip pour installer le package Django.
+
+Depuis python 3.4, pip est inclus pard éfaut dans l'installateur python.
+
+Une petite vérification ne faisant jamais de mal, tape ceçi dans ton invite de commande :
+
+
+    pip --version
+
+ou 
+
+    pip -v
+
+![Pip](assets/pip.png)
+
 
 Plus d'infos sur pip si tu veux aller plus loin:
 https://realpython.com/what-is-pip/#conclusion-what-is-pip
 ## Ton environnement virtuel
 ![Virtual env](assets/env.jpg)
-Parti pour installer Django ? Pas si vite !
 
-Il est de bonne pratique de ne pas installer Django directement sur sa machine mais de passer par un environnement virtuel. Késako ? 
->python3 -m venv venv
->
->-m ===> Runs library module module as a script
+Parti pour installer Django ? Minute papillon !
 
+Il est de bonne pratique de ne pas installer Django directement sur sa machine mais de l'installer dans un environnement virtuel. 
+
+Késako ? 
+
+De base, quand tu installes des packages python, ceux-ci seront tous installés dans le même dossier commun même si tu les utilises pour des projets différents. Ce qui peut parfois créer des conflits entre ses dépendances...
+
+Le but d'un environnement virtuel est de créer un environnement totalement isolé du reste de l'ordinateur pour chaque projet python. 
+
+Les dépendances de tes projets seront donc installés dans des dossiers séparés.
+Celà te permet d'installer tous les packages nécessaires à chacun de tes projets sans qu'il finisse par y avoir des conflits entre les dépendances de projets différents.
+Tu peux même utiliser des versions différentes de python pour chaque projet si tu en as envie.
+
+Fondamentalement, un environnement virtuel n'est qu'un dossier avec quelques scripts. Tu peux donc en créer autant que tu tu veux avec quelques lignes de commande.
+
+> Attention, c'est ici que des différences apparaissent entre python 2 et 3 au niveau des lignes de commandes. je te mets quand même les lignes de commande en python 2 au cas où.
+
+    python3 -m venv nomdetonenvironnement
+
+La commande "-m" signifie que tu veux télécharger le module "venv" ; c'est-à-dire le module "virtual environment".
+
+Dans mon cas, j'ai appelé mon environnement "workshop" mais tu es libre de l'appeller comme tu veux.
+
+Ce qui donne chez moi : 
+
+    python3 -m venv workshop
+
+Le module venv est inclus à partir de python 3.4. 
+
+Si tu es sur une version antérieure, tu devras l'installer via pip.
+
+        pip install virtualenv
+
+        virtualenv nomdetonenvironnement
+
+
+Maintenant que ton environnement est créé, il ne te reste qu'à l'activer.
+va dans le dossier de ton projet et tape ceçi :
+
+    source nomdetonenvironnement/bin/activate
+
+    ou bien
+
+     ./nomdetonenvironnement/bin/activate
+
+
+Chez moi, ça donne ça :
+
+
+![activate](assets/activate.png)
+
+Si tu est sous windows, tapes ceçi :
+
+    nomdetonenvrionnement\Scripts\activate.bat
+
+Tu remarqueras le nom de ton environnement apparait désormais devant ton user. Toutes tes futures lignes de commandes prennent donc uniquement cours dans ce dossier.
+
+A noter que dans mon exemple, le mot "workshop" apparait 2 fois. C'est uniquement parce que le dossier de mon projet porte le même nom que mon environnement.
+Sorry pour la confusion.
+
+Pour le désactiver, tape simplement :
+    
+    deactivate
+
+Ce qui donne :
+
+![deactivate](assets/deactivate.png)
+
+Voilà ! En prenant cette bonne habitude, tu t'épargneras pas mal de conflits entre tes projets python voire même entre toi et tes futures clients...
+
+Blague à part, installons enfin Django dans cette environnement virtuel.
 
 Pour aller plus loin : https://realpython.com/python-virtual-environments-a-primer/
 
 ![Virtual blague](assets/help.png)
 ## Django
 
-pip install django
+    pip install django
 
-Et maintenant, terminons cette longue phase d'installation avec la databse.
+Et maintenant, terminons cette longue phase d'installation avec la database.
 
 ## Database en postgreSQL
 ![Logo de postgresql](assets/post2.webp)
 
-Qui est ce bel éléphant qui pose son regard serein sur Django, me direz-vous ?
+Qui est ce bel éléphant qui pose son regard serein sur Django, me diras-tu ?
 
 Ce bel éléphant, c'est postgreSQL
 
-## Lancer ton serveur
+## Lance ton serveur
 
 
 
@@ -96,5 +223,9 @@ Ce bel éléphant, c'est postgreSQL
 
 # Pour Aller plus loin
 
-- https://realpython.com/
-- https://openclassrooms.com/fr/courses/4425076-decouvrez-le-framework-django
+- (énorme ressource en anglais pour python) https://realpython.com/
+- (tuto youtube en français) https://www.youtube.com/watch?v=SjRlmyEVXq4 
+- (open classrooom) https://openclassrooms.com/fr/courses/4425076-decouvrez-le-framework-django
+
+
+NE PAS OUBLIER LA PARTIE ADMIN
