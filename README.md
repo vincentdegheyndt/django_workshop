@@ -3,11 +3,10 @@
 ![logo Django](assets/djangoweb.jpg)
 
 ## Qu'est-ce que Django ?
-* Il s'agit du framework web Python le plus populaire. Il est notamment utilisé par Pinterest, Instagram, Eventbrite et mozilla.
+* Il s'agit du framework web Python le plus populaire avec `Flask`. Il est notamment utilisé par Pinterest, Instagram, Eventbrite et mozilla.
   
 * Django est basé sur une architecture MVT, elle-même dérivée de l'architecture MVC. 
 * Une administration ultra flexible
-* https://realpython.com/manage-users-in-django-admin/
 
 
 
@@ -30,7 +29,7 @@ Dans un projet Django, chaque application contient un document `models.py` qui r
 
 ### 2. Template
 
-Un template est un fichier HTML qui peut recevoir des objets Python et qui est lié à une vue (nous y reviendrons). Il est placé dans le dossier templates.
+Un template est un fichier HTML qui peut recevoir des objets Python et qui est lié à une vue (nous y reviendrons). Il est placé dans le dossier `templates`.
 
 Le template se concentre essentiellement sur l'affichage. il ne fait presque aucun calcul et se contente de récupérer des variables pour savoir ce qu'il doit afficher. 
 
@@ -59,14 +58,14 @@ https://openclassrooms.com/fr/courses/4425076-decouvrez-le-framework-django/4631
 
 Comme mentionné plus haut, le pattern MVT s'inspire du pattern MVC.
 
-Si tu as déjà des notions en MVC, fais bien attention à ne pas confondre ces deux modèles. En effet une vue en MVT n'est pas du tout la même chose qu'une vue en MVC.
+Si tu as déjà des notions en MVC, fais bien attention à ne pas confondre ces deux modèles. En effet, une vue en MVT n'est pas du tout la même chose qu'une vue en MVC.
 
-Si cette affirmation t'a fait bugger, remonte la page et relis la description du MVT^^
+Si cette affirmation t'a fait bugger, remonte la page et relis la description du MVT^^.
 
 
 # Installation
 ## Python
-Si tu es sur pc ou Mac,télécharge et installe Python : 
+Si tu es sur pc ou Mac, télécharge et installe Python : 
 https://www.python.org/
 
 Pour les adeptes d'Ubuntu,
@@ -115,7 +114,7 @@ ou
 ![Pip](assets/pip.png)
 
 
->Plus d'infos sur pip si tu veux aller plus loin:
+>Plus d'infos sur pip si tu veux aller plus loin :
 https://realpython.com/what-is-pip/#conclusion-what-is-pip
 ## Ton environnement virtuel
 ![Virtual env](assets/env.jpg)
@@ -158,7 +157,7 @@ Si tu es sur une version antérieure, tu devras l'installer via `pip`.
 
 
 Maintenant que ton environnement est créé, il ne te reste qu'à l'activer.
-va dans le dossier de ton projet et tape ceçi :
+Va dans le dossier de ton projet et tape ceçi :
 
     source nomdetonenvironnement/bin/activate
 
@@ -172,7 +171,7 @@ Chez moi, ça donne ça :
 
 ![activate](assets/activate.png)
 
-Si tu est sous windows, tapes ceçi :
+Si tu es sous windows, tape ceçi :
 
     nomdetonenvrionnement\Scripts\activate.bat
 
@@ -203,7 +202,7 @@ Tape ceçi pour installer la dernière version en date de Django:
     pip install django
 
 
-Lorsque tu installe python, tu installes également l'invit de commande (le shell) de python.
+Lorsque tu installes python, tu installes également l'invite de commande (le shell) de python.
 
 Retourne dans ton environnement virtuel et accède au shell python en tapant tout simplement :
     
@@ -215,13 +214,13 @@ tape :
     
     import django
 
-Si tu n'as pas de message d'erreyr, c'est que tout s'est correctement installé. Bravo !
+Si tu n'as pas de message d'erreur, c'est que tout s'est correctement installé. Bravo !
 
 tape encore :
 
     django.get_version()
 
-Et tu connaitras ta version de Django
+Et tu connaitras ta version de Django.
 
 Chez moi, ça donne ça :
 
@@ -240,7 +239,9 @@ Quitte le shell python et crée le projet instaclone via cette ligne de commande
 
 >Note : si tu n'es pas dans ton environnement virtuel, cette commande ne fonctionnera pas. Pourquoi ? Parce que tu as installé Django au sein de cet environnement uniquement. Il n'est donc pas accessible de l'extérieur. C'est tout l'intérêt de l'environnement virtuel.
 
-Django-admin est l’utilitaire en ligne de commande de Django pour les tâches administratives. tu ne t'en serviras qu'à la crétion du projet.
+Django-admin est l’utilitaire en ligne de commande de Django pour les tâches administratives. tu ne t'en serviras qu'à la création du projet.
+
+> Si tu veux creuser l'utilitaire admin, https://realpython.com/manage-users-in-django-admin/
 
 Tu peux ensuite taper :
 
