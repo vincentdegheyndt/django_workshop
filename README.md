@@ -20,39 +20,39 @@ En l'occurence, le but du MVT est de séparer la logique du code en trois partie
 
 ### 1. Modèle
 
-    Le modèle interagit avec la base de données. Sa mission est de chercher dans une base de donnée les items correspondant à une requête et de renvoyer une réponse facilement exploitable par le programme.
+Le modèle interagit avec la base de données. Sa mission est de chercher dans une base de donnée les items correspondant à une requête et de renvoyer une réponse facilement exploitable par le programme.
 
-    La consultation d'une base de données relationnelle se réalise par un langage appelé SQL (Structured Query Language). Sa syntaxe est très différente de Python ! 
+La consultation d'une base de données relationnelle se réalise par un langage appelé SQL (Structured Query Language). Sa syntaxe est très différente de Python ! 
 
-    Un ORM (Object Relational Mapping, ou Mapping objet-relationnel en français) est donc inclus dans le modèle pour traduire les résultats d'une requête SQL en objets Python avec lesquels il peut interagir. De même, il permet d'écrire une requête SQL directement en Python. Un peu comme un traducteur automatique !
+Un ORM (Object Relational Mapping, ou Mapping objet-relationnel en français) est donc inclus dans le modèle pour traduire les résultats d'une requête SQL en objets Python avec lesquels il peut interagir. De même, il permet d'écrire une requête SQL directement en Python. Un peu comme un traducteur automatique !
 
-    Dans un projet Django, chaque application contient un document models.py qui réunit les différents modèles utilisés.
+Dans un projet Django, chaque application contient un document `models.py` qui réunit les différents modèles utilisés.
 
 ### 2. Template
 
-    Un template est un fichier HTML qui peut recevoir des objets Python et qui est lié à une vue (nous y reviendrons). Il est placé dans le dossier templates.
+Un template est un fichier HTML qui peut recevoir des objets Python et qui est lié à une vue (nous y reviendrons). Il est placé dans le dossier templates.
 
-    Le template se concentre essentiellement sur l'affichage. il ne fait presque aucun calcul et se contente de récupérer des variables pour savoir ce qu'il doit afficher. 
+Le template se concentre essentiellement sur l'affichage. il ne fait presque aucun calcul et se contente de récupérer des variables pour savoir ce qu'il doit afficher. 
 
-    Par exemple, nous pouvons "donner" la variable tom="Tom" au template index.html et ce dernier l'affichera à la place du prénom.
+Par exemple, nous pouvons "donner" la variable tom="Tom" au template index.html et ce dernier l'affichera à la place du prénom.
 
 ### 3. Vue
 
-    La vue joue un rôle central dans un projet structuré en MVT : sa responsabilité est de recevoir une requête HTTP et d'y répondre de manière intelligible par le navigateur.
+La vue joue un rôle central dans un projet structuré en MVT : sa responsabilité est de recevoir une requête HTTP et d'y répondre de manière intelligible par le navigateur.
 
-    La vue réalise également toutes les actions nécessaires pour répondre à la requête :
+La vue réalise également toutes les actions nécessaires pour répondre à la requête :
 
-    Si une interaction avec la base de données est requise, la vue appelle un modèle et récupère les objets renvoyés par ce dernier.
+Si une interaction avec la base de données est requise, la vue appelle un modèle et récupère les objets renvoyés par ce dernier.
 
-    Si un gabarit est nécessaire, la vue l'appelle.
+Si un gabarit est nécessaire, la vue l'appelle.
 
-    Dans un projet Django, les vues de chaque application sont regroupées dans le document views.py.
+Dans un projet Django, les vues de chaque application sont regroupées dans le document `views.py`.
 
-    Chaque vue est associée à une url. Les urls d'un projet sont regroupées dans le fichier urls.py.
+Chaque vue est associée à une url. Les urls d'un projet sont regroupées dans le fichier `urls.py`.
 
 
 
-Pour aller plus loin, 
+>Pour aller plus loin, 
 https://openclassrooms.com/fr/courses/4425076-decouvrez-le-framework-django/4631014-decouvrez-larchitecture-mvt
 
 ### Comparaison avec le MVC
@@ -115,7 +115,7 @@ ou
 ![Pip](assets/pip.png)
 
 
-Plus d'infos sur pip si tu veux aller plus loin:
+>Plus d'infos sur pip si tu veux aller plus loin:
 https://realpython.com/what-is-pip/#conclusion-what-is-pip
 ## Ton environnement virtuel
 ![Virtual env](assets/env.jpg)
@@ -193,7 +193,7 @@ Voilà ! En prenant cette bonne habitude, tu t'épargneras pas mal de conflits e
 
 Blague à part, installons enfin Django dans cette environnement virtuel.
 
-Pour aller plus loin : https://realpython.com/python-virtual-environments-a-primer/
+>Pour aller plus loin : https://realpython.com/python-virtual-environments-a-primer/
 
 ![Virtual blague](assets/help.png)
 ## Django
@@ -306,4 +306,4 @@ Ce bel éléphant, c'est postgreSQL
 
 NE PAS OUBLIER LA PARTIE ADMIN
 
-start admin. refaire screenshot sans becode
+start admin. refaire screenshot sans becodes
