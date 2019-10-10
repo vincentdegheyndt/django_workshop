@@ -240,22 +240,34 @@ Quitte le shell python et crée le projet instaclone via cette ligne de commande
 
 >Note : si tu n'es pas dans ton environnement virtuel, cette commande ne fonctionnera pas. Pourquoi ? Parce que tu as installé Django au sein de cet environnement uniquement. Il n'est donc pas accessible de l'extérieur. C'est tout l'intérêt de l'environnement virtuel.
 
+Tu peux ensuite taper :
 
+    ls
 
-## Database en postgreSQL
-![Logo de postgresql](assets/post2.webp)
+Ce qui affiche le contenu du répertoire que tu viens de créer.
 
-Qui est ce bel éléphant qui pose son regard serein sur Django, me diras-tu ?
+Ce qui donne ceçi :
 
-Ce bel éléphant, c'est postgreSQL
+![start admin](assets/startadmin.png)
+
+Pour finir, tape :
+
+    cd instaclone
+    
+    code .
+
+Tu devrais normalement avoir lancé Vs code et ouvert ton projet.
+Si tu utilises un autre éditeur de code, le raccourci sera évidemment différent. 
+Je te te laisse te renseigner ^^
+
+![server](assets/server.png)
+
+![worked](assets/worked.png)
 
 ## Lance ton serveur
 
 
-
 ![Le python te félicite](assets/meme.jpg)
-
-# Votre premier projet (Instagram)
 
 
 # Pour Aller plus loin
@@ -265,4 +277,20 @@ Ce bel éléphant, c'est postgreSQL
 - (open classrooom) https://openclassrooms.com/fr/courses/4425076-decouvrez-le-framework-django
 
 
+
+
+
+## Database en postgreSQL
+![Logo de postgresql](assets/post2.webp)
+
+Qui est ce bel éléphant qui pose son regard serein sur Django, me diras-tu ?
+
+Ce bel éléphant, c'est postgreSQL
+
+
+
+    à faire !!!!!!!
+
 NE PAS OUBLIER LA PARTIE ADMIN
+
+start admin. refaire screenshot sans becode
