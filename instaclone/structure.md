@@ -1,8 +1,8 @@
-1. [Installation de Python-Django](./README.md)
+1. [Installation de Python-Django](../README.md)
 2. [Création de l'app](creationappli.md)
 3. [Structure](structure.md)
 4. [Media](media.md)
-5. [PostgreSQL](postgresql.md)
+5. [PostgreSQL](../postgresql.md)
 6. [CSS](css.md)
 7. [Formulaire](formulaire.md)
    
