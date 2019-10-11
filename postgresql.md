@@ -1,3 +1,11 @@
+1. [Installation de Python-Django](README.md)
+2. [Création de l'app](instaclone/creationappli.md)
+3. [Structure](instaclone/structure.md)
+4. [Media](instaclone/media.md)
+5. [PostgreSQL](postgresql.md)
+6. [CSS](instaclone/css.md)
+7. [Formulaire](instaclone/formulaire.md)
+
 # La database postgreSQL
 ![Logo de postgresql](assets/post2.webp)
 
@@ -99,3 +107,6 @@ Si tu ne connais pas, c'est une interface graphique utilisateur qui te permet de
 
 
     verifier que ça fonctionne (dans schéma → table)
+
+
+Tu peux maintenant passer au CSS de ton app : [CSS](instaclone/css.md)

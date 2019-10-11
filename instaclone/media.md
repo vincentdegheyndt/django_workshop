@@ -1,9 +1,10 @@
-0. [Installation de Python-Django](README.md)
-1. [Création de l'app](instaclone/1.creationappli.md)
-2. [Structure](instaclone/2.structure.md)
-3. [Media](instaclone/3.media.md)
-4. [CSS](instaclone/4.css.md)
-5. [Formulaire](instaclone/5.formulaire.md)
+1. [Installation de Python-Django](README.md)
+2. [Création de l'app](instaclone/creationappli.md)
+3. [Structure](instaclone/structure.md)
+4. [Media](instaclone/media.md)
+5. [PostgreSQL](postgresql.md)
+6. [CSS](instaclone/css.md)
+7. [Formulaire](instaclone/formulaire.md)
 
 ## Ajoutez des médias
 
@@ -156,3 +157,5 @@ S'il n'y a pas de soucis quand on relance le serveur, c'est bien. Par contre, le
 On remplace donc ce qu'il y avait dans le block content par ce qu'il y a au-dessus. Concrètement, l'object_list est l'objet généré par la méthode as_view() et qui contient toutes les données du modèle Post. On itère donc à travers chaque entrée et on recupère l'url (post.cover.url) pour la source de l'image et le titre. 
 
 Bien sûr, pour l'instant, c'est moche. Et les images sont sûrement milles fois trop grandes. C'est pourquoi on va rajouter du CSS. (Là, vous pourrez faire du copier-coller en toute impunité ; n'ayez crainte.)
+
+Tu peux passer à la database PostgreSQL : [PostgreSQL](instaclone/postgresql.md)

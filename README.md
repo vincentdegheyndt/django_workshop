@@ -2,12 +2,13 @@
 
 ![logo Django](assets/djangoweb.jpg)
 
-0. [Installation de Python-Django](instaclone/README.md)
-1. [Création de l'app](instaclone/1.creationappli.md)
-2. [Structure](instaclone/2.structure.md)
-3. [Media](instaclone/3.media.md)
-4. [CSS](instaclone/4.css.md)
-5. [Formulaire](instaclone/5.formulaire.md)
+1. [Installation de Python-Django](README.md)
+2. [Création de l'app](instaclone/creationappli.md)
+3. [Structure](instaclone/structure.md)
+4. [Media](instaclone/media.md)
+5. [PostgreSQL](postgresql.md)
+6. [CSS](instaclone/css.md)
+7. [Formulaire](instaclone/formulaire.md)
 ## Qu'est-ce que Django ?
 * Il s'agit du framework web Python le plus populaire avec `Flask`. Il est notamment utilisé par Pinterest, Instagram, Eventbrite et mozilla.
   
@@ -292,7 +293,7 @@ Rends-toi sur ton localhost (8000 dans cet exemple) et tu devrais avoir ta premi
 
 
 
-Tu peux maintenant passer au tuto d'Intaclone : [Instaclone](instaclone/1.creationappli.md).
+Tu peux maintenant passer au tuto d'Intaclone : [Instaclone](instaclone/creationappli.md).
 # Pour Aller plus loin
 
 - (énorme ressource en anglais pour python) https://realpython.com/
