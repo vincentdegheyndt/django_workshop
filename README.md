@@ -2,16 +2,22 @@
 
 ![logo Django](assets/djangoweb.jpg)
 
+0. [Installation de Python-Django](instaclone/README.md)
+1. [Création de l'app](instaclone/1.creationappli.md)
+2. [Structure](instaclone/2.structure.md)
+3. [Media](instaclone/3.media.md)
+4. [CSS](instaclone/4.css.md)
+5. [Formulaire](instaclone/5.formulaire.md)
 ## Qu'est-ce que Django ?
 * Il s'agit du framework web Python le plus populaire avec `Flask`. Il est notamment utilisé par Pinterest, Instagram, Eventbrite et mozilla.
   
 * Django est basé sur une architecture MVT, elle-même dérivée de l'architecture MVC. 
-* Une administration ultra flexible
+* C'est un framework scalable ; c'est-à-dire qu'il peut facilement grandir en même temps que le projet en rajoutant des apps au fur et à mesure.
 
 
 
 ## Qu'est-ce que l'architecture MVT ?
-Le MVT est un design pattern qui signifie Modèle - Vue - Template.
+Le MVT est un design pattern qui signifie `Modèle` - `Vue` - `Template`.
 
 Le but d'un design pattern est d'organiser son code source en fonction d'une logique bien précise.
 
@@ -285,6 +291,8 @@ Rends-toi sur ton localhost (8000 dans cet exemple) et tu devrais avoir ta premi
 ![Le python te félicite](assets/meme.jpg)
 
 
+
+Tu peux maintenant passer au tuto d'Intaclone : [Instaclone](instaclone/1.creationappli.md).
 # Pour Aller plus loin
 
 - (énorme ressource en anglais pour python) https://realpython.com/
