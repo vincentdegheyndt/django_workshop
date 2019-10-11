@@ -161,7 +161,7 @@ Va dans le dossier de ton projet et tape ceçi :
 
     source nomdetonenvironnement/bin/activate
 
-    ou bien
+ou bien
 
      ./nomdetonenvironnement/bin/activate
 
@@ -252,6 +252,7 @@ Ce qui affiche le contenu du répertoire que tu viens de créer.
 Ce qui donne ceçi :
 
 ![start admin](assets/startadmin.png)
+>J'ai également un dossier becode qui n'apparaitra pas chez toi. Tu ne devrais avoir que "instaclone url wokshop".
 
 Pour finir, tape :
 
@@ -290,21 +291,6 @@ Rends-toi sur ton localhost (8000 dans cet exemple) et tu devrais avoir ta premi
 - (tuto youtube en français) https://www.youtube.com/watch?v=SjRlmyEVXq4 
 - (open classrooom) https://openclassrooms.com/fr/courses/4425076-decouvrez-le-framework-django
 
-
-
-
-
-## Database en postgreSQL
-![Logo de postgresql](assets/post2.webp)
-
-Qui est ce bel éléphant qui pose son regard serein sur Django, me diras-tu ?
-
-Ce bel éléphant, c'est postgreSQL
-
-
-
     à faire !!!!!!!
-
-NE PAS OUBLIER LA PARTIE ADMIN
 
 start admin. refaire screenshot sans becodes
