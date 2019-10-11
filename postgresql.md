@@ -33,12 +33,15 @@ Si tu es sur un autre système d'exploitation, tape celà :
 
 PostgresQl va donc s'installer , créer une base de donnée et un utilisateur `superuser`.
 
-Toutes les opérations d'administration se font, au départ, avec l'utilisateur `postgres`. À la fin de l'installation, celui-ci ne possède pas de mot de passe. La première chose à faire sera de créer un nouvel utilisateur, mais pour ce faire, il faut se connecter au moins une fois en tant qu'utilisateur postgres. Pour devenir postgres et faire les opérations d'administration qui suivent, tape ceçi pour te connecter à `postgres` : 
+Toutes les opérations d'administration se font, au départ, avec l'utilisateur `postgres`. À la fin de l'installation, celui-ci ne possède pas de mot de passe. La première chose à faire sera de créer un nouvel utilisateur, mais pour ce faire, il faut se connecter au moins une fois en tant qu'utilisateur postgres. Pour devenir postgres et faire les opérations d'administration qui suivent, tape ceçi pour te connecter à `postgres` psql (le shell de postgress): 
 
-    sudo -i -u postgres 
-    Password: 
+    sudo -u postgres psql 
+
+    \password: postgres
 
 les commandes `exit` ou `ctrl+d` te permettront, à la fin de cette session d'administration dans PostgreSQL, de reprendre la main en tant qu'utilisateur du système. 
+
+Déconnecte-toi de `postgres`.
 
 ## Création de la database
 
@@ -53,10 +56,23 @@ Sur les autres systèmes :
 Créer un nouvel utilisateur et donne lui accès à la nouvelle database.
 
     $ sudo -u postgres psql 
-    postgres=# CREATE USER mon_user WITH PASSWORD 'mon_password';
+
+Dans `postgres`, crée l'utilisateur
+
+    CREATE USER mon_user WITH PASSWORD 'mon_password';
+
+Tu auras la confirmation :
+
     CREATE ROLE
-    postgres=# GRANT ALL ON DATABASE ma_db TO mon_user;
+
+Puis accorde tous les droits d'accès à ton utilisateur :
+
+    GRANT ALL ON DATABASE ma_db TO mon_user;
+
+Tu auras la confirmation :
+
     GRANT
+   
 
 ## Installation de l’adaptateur Django-PostgresQL
 
@@ -89,9 +105,9 @@ Va maintenant dans le fichier `settings.py` de ton projet django, cherche ma sec
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'le_nom_de_ta_db',
-            'USER': 'ton_user_name',
-            'PASSWORD': 'ton_password',
+            'NAME': 'ma_db',
+            'USER': 'mon_user',
+            'PASSWORD': 'mon_password',
             'HOST': 'localhost',
             'PORT': '',
         }

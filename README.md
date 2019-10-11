@@ -299,7 +299,3 @@ Tu peux maintenant passer au tuto d'Intaclone : [Instaclone](instaclone/creation
 - (énorme ressource en anglais pour python) https://realpython.com/
 - (tuto youtube en français) https://www.youtube.com/watch?v=SjRlmyEVXq4 
 - (open classrooom) https://openclassrooms.com/fr/courses/4425076-decouvrez-le-framework-django
-
-    à faire !!!!!!!
-
-start admin. refaire screenshot sans becodes
