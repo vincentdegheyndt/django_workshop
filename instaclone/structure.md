@@ -1,10 +1,11 @@
-1. [Installation de Python-Django](README.md)
-2. [Création de l'app](instaclone/creationappli.md)
-3. [Structure](instaclone/structure.md)
-4. [Media](instaclone/media.md)
+1. [Installation de Python-Django](./README.md)
+2. [Création de l'app](creationappli.md)
+3. [Structure](structure.md)
+4. [Media](media.md)
 5. [PostgreSQL](postgresql.md)
-6. [CSS](instaclone/css.md)
-7. [Formulaire](instaclone/formulaire.md)
+6. [CSS](css.md)
+7. [Formulaire](formulaire.md)
+   
 
 ## Les fichiers template
 
@@ -199,4 +200,4 @@ Regardez le résultat et faites la même chose pour `post.html`. Il n'y a pas un
 ``` 
 
 
-Tu peux maintenant passer aux media de ton app : [Media](instaclone/media.md).
+Tu peux maintenant passer aux media de ton app : [Media](media.md).

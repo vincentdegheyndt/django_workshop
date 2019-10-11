@@ -1,10 +1,11 @@
-1. [Installation de Python-Django](README.md)
-2. [Création de l'app](instaclone/creationappli.md)
-3. [Structure](instaclone/structure.md)
-4. [Media](instaclone/media.md)
+1. [Installation de Python-Django](./README.md)
+2. [Création de l'app](creationappli.md)
+3. [Structure](structure.md)
+4. [Media](media.md)
 5. [PostgreSQL](postgresql.md)
-6. [CSS](instaclone/css.md)
-7. [Formulaire](instaclone/formulaire.md)
+6. [CSS](css.md)
+7. [Formulaire](formulaire.md)
+   
 
 ## Ajoutez des médias
 
@@ -158,4 +159,4 @@ On remplace donc ce qu'il y avait dans le block content par ce qu'il y a au-dess
 
 Bien sûr, pour l'instant, c'est moche. Et les images sont sûrement milles fois trop grandes. C'est pourquoi on va rajouter du CSS. (Là, vous pourrez faire du copier-coller en toute impunité ; n'ayez crainte.)
 
-Tu peux passer à la database PostgreSQL : [PostgreSQL](instaclone/postgresql.md)
+Tu peux passer à la database PostgreSQL : [PostgreSQL](postgresql.md)

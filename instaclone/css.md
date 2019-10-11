@@ -1,10 +1,11 @@
-1. [Installation de Python-Django](README.md)
-2. [Création de l'app](instaclone/creationappli.md)
-3. [Structure](instaclone/structure.md)
-4. [Media](instaclone/media.md)
+1. [Installation de Python-Django](./README.md)
+2. [Création de l'app](creationappli.md)
+3. [Structure](structure.md)
+4. [Media](media.md)
 5. [PostgreSQL](postgresql.md)
-6. [CSS](instaclone/css.md)
-7. [Formulaire](instaclone/formulaire.md)
+6. [CSS](css.md)
+7. [Formulaire](formulaire.md)
+   
 ## Le CSS
 
 Pour pouvoir ajouter du CSS et tout autre fichier statique, ajoutez ceci à la fin de `settings.py`:
@@ -152,4 +153,4 @@ Comme ça, dans le template `index.html`, on ajoute:
 L'icône viendra s'insérer là où on a défini le block, dans `base.html`. Il ne mène nul part pour l'instant, car nous devons créer la partie "upload" dans `post.html`.
 
 
-Tu peux maintenant passer au formulaire de ton app : [Formulaire](instaclone/formulaire.md)
+Tu peux maintenant passer au formulaire de ton app : [Formulaire](formulaire.md)
