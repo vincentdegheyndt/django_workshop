@@ -1,6 +1,6 @@
 # L'application Instaclone
 
-1. [Installation de Python-Django](./README.md)
+1. [Installation de Python-Django](../README.md)
 2. [Création de l'app](creationappli.md)
 3. [Structure](structure.md)
 4. [Media](media.md)
