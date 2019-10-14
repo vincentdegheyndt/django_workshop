@@ -11,15 +11,23 @@
 7. [Formulaire](instaclone/formulaire.md)
 ## Qu'est-ce que Django ?
 * Il s'agit du framework web Python le plus populaire avec `Flask`. Il est notamment utilisé par Pinterest, Instagram, Eventbrite et mozilla.
+
+* framework ancien (11 ans) stable avec un écosystème riche.
+
+* Il est rapide pour qui sait l'utiliser.
+* Framework sécurisé
   
 * Django est basé sur une architecture MVT, elle-même dérivée de l'architecture MVC. 
 
-* Il est réputé rapide pour qui sait l'utiliser.
-* Framework sécurisé
+* C'est un framework scalable ; c'est-à-dire qu'il peut facilement grandir en même temps que le projet en rajoutant des plug-ins au fur et à mesure.
 
-* C'est un framework scalable ; c'est-à-dire qu'il peut facilement grandir en même temps que le projet en rajoutant des apps au fur et à mesure.
+* Interractions rapides avec la database via l'ORM.
 
+## Qu'est-ce que l'ORM ?
 
+Un ORM (Object Relational Mapping, ou Mapping objet-relationnel en français) est inclus dans `Django` pour traduire les résultats d'une requête SQL en objets Python avec lesquels il peut interagir. De même, il permet d'écrire une requête SQL directement en Python. Un peu comme un traducteur automatique !
+
+![ORM](assets/orm.png)
 
 ## Qu'est-ce que l'architecture MVT ?
 Le MVT est un design pattern qui signifie `Modèle` - `Vue` - `Template`.
@@ -67,7 +75,7 @@ https://steelkiwi.com/blog/why-django-best-web-framework-your-project/
 
 >https://openclassrooms.com/fr/courses/4425076-decouvrez-le-framework-django/4631014-decouvrez-larchitecture-mvt
 
-![MVTMa version de Python](assets/mvt.png)
+![MVT](assets/mvt.png)
 
 
 ### Comparaison avec le MVC
