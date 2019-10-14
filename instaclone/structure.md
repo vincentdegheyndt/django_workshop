@@ -61,7 +61,7 @@ Si on analyse cette partie du code :
 
 On peut voir que les chemins des urls de gallery seront inclus à la racine du projet ('')
 
-On va ensuite éditer le fichier urls.py de l'application même:
+On va ensuite éditer (ou créer s'il n'existe pas encore) le fichier urls.py dans le dossier "gallery" de l'application même:
 
 `gallery/urls.py`:
 
