@@ -36,7 +36,7 @@ On va faire simple au départ, sans données externes, pour comprendre la base. 
     def home(request):
         return render(request, 'index.html)
 
-Par contre, pour les URLS, nous devons passer par le fichier `urls.py` du dossier projet avant d'éditer celui de l'application.
+Par contre, pour les URLS, nous devons passer par le fichier `urls.py` du dossier projet (dossier instaclone) avant d'éditer celui de l'application.
 
 `instaClone/urls.py`:
 
@@ -61,7 +61,7 @@ Si on analyse cette partie du code :
 
 On peut voir que les chemins des urls de gallery seront inclus à la racine du projet ('')
 
-On va ensuite éditer (ou créer s'il n'existe pas encore) le fichier urls.py dans le dossier "gallery" de l'application même:
+On va ensuite éditer (ou créer s'il n'existe pas encore) UN NOUVEAU fichier urls.py dans le dossier "gallery" de l'application même:
 
 `gallery/urls.py`:
 
