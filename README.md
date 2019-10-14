@@ -42,8 +42,6 @@ Le modèle interagit avec la base de données. Sa mission est de chercher dans u
 
 La consultation d'une base de données relationnelle se réalise par un langage appelé SQL (Structured Query Language). Sa syntaxe est très différente de Python ! 
 
-Un ORM (Object Relational Mapping, ou Mapping objet-relationnel en français) est donc inclus dans le modèle pour traduire les résultats d'une requête SQL en objets Python avec lesquels il peut interagir. De même, il permet d'écrire une requête SQL directement en Python. Un peu comme un traducteur automatique !
-
 Dans un projet Django, chaque application contient un document `models.py` qui réunit les différents modèles utilisés.
 
 ### 2. Template
