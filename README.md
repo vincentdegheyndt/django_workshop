@@ -217,7 +217,7 @@ Lorsque tu installes python, tu installes également l'invite de commande (le sh
 
 Retourne dans ton environnement virtuel et accède au shell python en tapant tout simplement :
     
-    python
+    python3
 
 Ce nouveau shell te servira à créer tes projets. 
 
