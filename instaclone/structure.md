@@ -165,7 +165,7 @@ Dès que vous voyez les tags de la template engine, c'est qu'on peut y ajoutez d
 
 </div>
 ```
-C'est ici qu'on inserera le contenu de nos différentes pages. Voici comment importer le layout de base et y ajouter du contenu:
+C'est dans index.html qu'on inserera le contenu de nos différentes pages. Voici comment importer le layout de base et y ajouter du contenu:
 
 ```html
 
