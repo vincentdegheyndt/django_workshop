@@ -13,7 +13,7 @@
 
 Quand on lance un projet, un dossier se crée ainsi qu'un sous-dossier du même nom. Pour créer une application (un blog, une page e-commerce, etc) dans ce projet, on tape la commande suivante à la racine où se trouve `manage.py`:
 
-    ./manage.py startapp gallery
+    django-admin startapp gallery
 
 
 Si vous êtes curieux, je vous invite à lire ce qui suit. Sinon, scrollez jusqu'à l'image du paresseux. 
