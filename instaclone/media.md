@@ -23,6 +23,11 @@ Il reste encore quelques configurations dans l'`urls.py` du projet. On importe l
 ```
 from django.conf import settings
 ```
+et le module static:
+
+```
+from django.conf.urls.static import static
+```
 
 Et on ajoute ceci pour stocker les images en développement : 
 
