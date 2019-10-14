@@ -18,7 +18,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 ```
 
-Il reste encore quelques configurations dans l'`urls.py` du projet. On importe le module settings :
+Il reste encore quelques configurations dans l'`urls.py` du projet (dossier instaclone). On importe le module settings :
 
 ```
 from django.conf import settings
