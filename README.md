@@ -50,7 +50,7 @@ La vue réalise également toutes les actions nécessaires pour répondre à la 
 
 Si une interaction avec la base de données est requise, la vue appelle un modèle et récupère les objets renvoyés par ce dernier.
 
-Si un gabarit est nécessaire, la vue l'appelle.
+Si un template est nécessaire, la vue l'appelle.
 
 Dans un projet Django, les vues de chaque application sont regroupées dans le document `views.py`.
 
