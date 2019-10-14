@@ -116,13 +116,18 @@ Depuis python 3.4, pip est inclus par défaut dans l'installateur python.
 Une petite vérification ne faisant jamais de mal, tape ceçi dans ton invite de commande :
 
 
-    pip --version
+    pip3 --version
 
 ou 
 
-    pip -v
+    pip3 -v
 
 ![Pip](assets/pip.png)
+
+
+Si votre version de `pip` est antérieure à la version 3, mettez-là à jour via :
+
+    sudo apt install python3-pip
 
 
 >Plus d'infos sur pip si tu veux aller plus loin :
@@ -162,7 +167,7 @@ Le module `venv` est inclus à partir de python 3.4.
 
 Si tu es sur une version antérieure, tu devras l'installer via `pip`.
 
-        pip install virtualenv
+        pip3 install virtualenv
 
         virtualenv nomdetonenvironnement
 
@@ -210,7 +215,7 @@ Blague à part, installons enfin Django dans cette environnement virtuel.
 
 Tape ceçi pour installer la dernière version en date de Django: 
 
-    pip install django
+    pip3 install django
 
 
 Lorsque tu installes python, tu installes également l'invite de commande (le shell) de python.
