@@ -13,6 +13,10 @@
 * Il s'agit du framework web Python le plus populaire avec `Flask`. Il est notamment utilisé par Pinterest, Instagram, Eventbrite et mozilla.
   
 * Django est basé sur une architecture MVT, elle-même dérivée de l'architecture MVC. 
+
+* Il est réputé rapide pour qui sait l'utiliser.
+* Framework sécurisé
+
 * C'est un framework scalable ; c'est-à-dire qu'il peut facilement grandir en même temps que le projet en rajoutant des apps au fur et à mesure.
 
 
