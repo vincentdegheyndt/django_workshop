@@ -13,6 +13,10 @@
 * Il s'agit du framework web Python le plus populaire avec `Flask`. Il est notamment utilisé par Pinterest, Instagram, Eventbrite et mozilla.
   
 * Django est basé sur une architecture MVT, elle-même dérivée de l'architecture MVC. 
+
+* Il est réputé rapide pour qui sait l'utiliser.
+* Framework sécurisé
+
 * C'est un framework scalable ; c'est-à-dire qu'il peut facilement grandir en même temps que le projet en rajoutant des apps au fur et à mesure.
 
 
@@ -50,7 +54,7 @@ La vue réalise également toutes les actions nécessaires pour répondre à la 
 
 Si une interaction avec la base de données est requise, la vue appelle un modèle et récupère les objets renvoyés par ce dernier.
 
-Si un gabarit est nécessaire, la vue l'appelle.
+Si un template est nécessaire, la vue l'appelle.
 
 Dans un projet Django, les vues de chaque application sont regroupées dans le document `views.py`.
 
@@ -213,7 +217,7 @@ Lorsque tu installes python, tu installes également l'invite de commande (le sh
 
 Retourne dans ton environnement virtuel et accède au shell python en tapant tout simplement :
     
-    python
+    python3
 
 Ce nouveau shell te servira à créer tes projets. 
 

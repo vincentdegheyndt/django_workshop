@@ -7,9 +7,11 @@
 7. [Formulaire](formulaire.md)
    
  
-## Les formulaires
 
-Pour pouvoir ajoutez des éléments, il va falloir créer un formulaire. Django a prévu le coup : il nous suffit de créer un nouveau fichier `forms.py` et d'y ajoutez 3 choses:
+
+# les formulaires
+
+Pour pouvoir ajoutez des éléments, il va falloir créer un formulaire. Django a prévu le coup, et il nous suffit de créer un nouveau fichier `forms.py` et d'y ajoutez 3 choses:
 
 - un import du module forms de Django:
 
@@ -30,7 +32,7 @@ class PostForm(forms.ModelForm):
         fields = ['cover', 'title']
 ```
 
-Après ça, on crée le lien avec views.py en créant une autre classe. Mais d'abord, il faut encore importer quelques trucs !
+Après ça, on crée le lien avec views.py en créant une autre classe. Mais d'abord, il faut encore importer quelques trucs!
 
 - la classe PostForm qu'on vient de créer:
 
@@ -40,7 +42,7 @@ Après ça, on crée le lien avec views.py en créant une autre classe. Mais d'a
 
     from django.urls import reverse_lazy 
 
-On peut maintenant créer la classe :
+on peut maintenant créer la classe:
 
 ```
 class CreatePostView(generic.CreateView): 
@@ -50,11 +52,11 @@ class CreatePostView(generic.CreateView):
     success_url = reverse_lazy('gallery:index')
 ```
 
-Il faudra bien sûr editer l'url dans `urls.py` pour refléter la nouvelle classe :
+il faudra bien sûr editer l'url dans `urls.py` pour refleter la nouvelle classe:
 
     path('post/', views.CreatePostView.as_view(), name='add_post')
 
-Et éditer la template `post.html` pour y afficher le formulaire :
+et éditer la template `post.html` pour y afficher le formulaire:
 
 ```
 {% extends "base.html" %}
@@ -76,7 +78,7 @@ Et éditer la template `post.html` pour y afficher le formulaire :
 
 ```
 
-Pour terminer, retournez sur le template `index.html` et ajoutez-y le lien vers la page d'upload sur l'icone :
+Pour terminer, retournez sur le template `index.html` et ajoutez-y le lien vers la page d'upload sur l'icone:
 
 ```
 {% block addPhoto %}
@@ -88,5 +90,6 @@ Pour terminer, retournez sur le template `index.html` et ajoutez-y le lien vers 
 {% endblock %}
 ```
 
-Et voilà ! 
+Et voilà! 
 
+Et voici un petit bonus pour ceux qui sont motivés: [ajouter des boutons like/dislike](bonus.md)
