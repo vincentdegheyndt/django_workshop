@@ -175,7 +175,7 @@ footer {
 
 ```
 
-et copier les deux images ([image 1](img/addpic.png) [image 2](img/logo.png) dans static/img
+et copier les deux images ([image 1](img/addpic.png)+ [image 2](img/logo.png)) dans static/img
 
 Parfait, maintenant il n'y a plus qu'à lier le css avec la template de base en y ajoutant ceci et le tour est joué:
 
