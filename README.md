@@ -63,7 +63,12 @@ Chaque vue est associée à une url. Les urls d'un projet sont regroupées dans 
 
 
 >Pour aller plus loin, 
-https://openclassrooms.com/fr/courses/4425076-decouvrez-le-framework-django/4631014-decouvrez-larchitecture-mvt
+https://steelkiwi.com/blog/why-django-best-web-framework-your-project/
+
+>https://openclassrooms.com/fr/courses/4425076-decouvrez-le-framework-django/4631014-decouvrez-larchitecture-mvt
+
+![MVTMa version de Python](assets/mvt.png)
+
 
 ### Comparaison avec le MVC
 
